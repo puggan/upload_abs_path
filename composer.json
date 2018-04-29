@@ -1,0 +1,9 @@
+{
+  "name": "puggan/upload_abs_path",
+  "description": "Makes Wordpress able to accept absolute paths as uploads dirs",
+  "type": "wordpress-plugin",
+  "require": {
+    "composer/installers": "~1.0",
+    "SpiroAB/wp_version_tracker": "~1.0"
+  }
+}
