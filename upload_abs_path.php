@@ -9,7 +9,7 @@
 	/*
 	Plugin Name: UploadAbsPath
 	Description: Makes Wordpress able to accept absolute paths as uploads dirs
-	Version: 1.0.0
+	Version: 1.0.1
 	Author: Puggan
 	Author URI: http://blog.puggan.se
 	*/
@@ -34,7 +34,7 @@
 					{
 						$siteurl = trailingslashit(get_option('siteurl'));
 						$site_url_parts = parse_url($siteurl);
-						$site_url_root = "{$site_url_parts['scheme']}://{$site_url_parts['host']}" . ($site_url_parts['port'] ? ":{$site_url_parts['port']}" : '');
+						$site_url_root = "{$site_url_parts['scheme']}://{$site_url_parts['host']}" . (empty($site_url_parts['port']) ? '' : ":{$site_url_parts['port']}");
 
 						$param['url'] = str_replace($siteurl, $site_url_root, $param['url']);
 						$param['baseurl'] = str_replace($siteurl, $site_url_root, $param['baseurl']);

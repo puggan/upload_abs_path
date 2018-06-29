@@ -1,7 +1,7 @@
 {
   "name": "UploadAbsPath",
   "slug": "upload_abs_path",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Puggan Sundragon <puggan@sundragon.se>",
   "description": "Makes Wordpress able to accept absolute paths as uploads dirs",
   "requires": "4.9",
